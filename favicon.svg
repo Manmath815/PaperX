@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#174D37"/>
+  <!-- Folded sheet and organic leaf motif -->
+  <path d="M14 12C14 10.8954 14.8954 10 16 10H26L34 18V36C34 37.1046 33.1046 38 32 38H16C14.8954 38 14 37.1046 14 36V12Z" fill="#F7F6F0" fill-opacity="0.95"/>
+  <path d="M26 10L34 18H28C26.8954 18 26 17.1046 26 16V10Z" fill="#8EBF78"/>
+  <path d="M20 25C20 22 23 20 26 21C27 23 27 27 24 29C22 30 20 28 20 25Z" fill="#174D37"/>
+  <path d="M21 28L27 22" stroke="#8EBF78" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
