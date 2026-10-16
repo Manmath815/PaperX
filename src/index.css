@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #F7F6F0;
+    color: #17231E;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Manrope', system-ui, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Subtle organic paper grain background */
+.paper-texture {
+  background-color: #F7F6F0;
+  background-image: 
+    radial-gradient(rgba(23, 35, 30, 0.035) 1px, transparent 0),
+    radial-gradient(rgba(142, 191, 120, 0.02) 1px, transparent 0);
+  background-size: 24px 24px, 48px 48px;
+  background-position: 0 0, 12px 12px;
+}
+
+.paper-texture-dark {
+  background-color: #17231E;
+  background-image: radial-gradient(rgba(247, 246, 240, 0.03) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Tactile Letterpress / Debossed Effect */
+.debossed-surface {
+  background: #F2EFE8;
+  box-shadow: inset 1px 1px 3px rgba(23, 35, 30, 0.06), inset -1px -1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.embossed-surface {
+  background: #FAF9F5;
+  box-shadow: 2px 2px 6px rgba(23, 35, 30, 0.04), -2px -2px 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Editorial kraft paper tape tag */
+.kraft-tag {
+  background-color: #D8C7B0;
+  border-left: 2px dashed rgba(23, 35, 30, 0.2);
+  border-right: 2px dashed rgba(23, 35, 30, 0.2);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2CCC7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8FBFA6;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
